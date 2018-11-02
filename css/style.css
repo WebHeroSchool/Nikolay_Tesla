@@ -1,0 +1,119 @@
+.navigation {
+	display: flex;
+
+	align-items: center;
+}
+
+.navigation__menu {
+	display: flex;
+}
+
+.navigation__logo {
+	margin-left: 49px;
+	margin-right: 249px;
+}
+
+.navigation__left {
+	margin-right: 168px;
+}
+
+.navigation__item {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+	color: black;
+
+
+	text-decoration: none;
+
+	padding-bottom: 10px;
+
+	margin-right: 22px;
+	margin-left: 22px;
+}
+
+.navigation__item_active {
+	color: #E51937;
+
+	border-bottom: 2px solid #E51937;
+	border-radius: 2px;
+}
+
+.navigation__burger {
+	background-image: url(../img/burger.png);
+
+	width: 24px;
+	height: 15px;
+
+	border: none;
+}
+
+.intro {
+	background-image: url(../img/tesla-and-title.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-position: center;
+}
+
+.intro__header {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+
+	font-size: 90px;
+	line-height: 110px;
+
+	text-align: center;
+
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.intro__paragraph {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+
+	font-size: 15px;
+	line-height: 18px;
+
+	text-align: center;
+
+	margin: 0;
+	margin-bottom: 504px;
+}
+
+.intro__footer {
+	display: flex;
+}
+
+.order-button {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+
+	font-size: 13px;
+	line-height: 16px;
+
+	color: black;
+
+	border: 2px solid black;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.order-button_white {
+	color: white;
+	border-color: white;
+}
+
+.order-button_red {
+	color: #E51937;
+	border-color: #E51937;
+
+}

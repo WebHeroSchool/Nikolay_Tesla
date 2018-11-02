@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Tesla</title>
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
     <nav class="navigation">
-        <img class="navigation__logo" src="" alt="">
+        <img class="navigation__logo" src="img/Tesla-Wordmark-Red.png" alt="Tesla logo">
         <div class="navigation__menu">
             <div class="navigation__left">
                 <a class="navigation__item navigation__item_active" href="">Model S</a>
@@ -29,17 +30,18 @@
     <section class="intro">
         <h1 class="intro__header">Model S</h1>
         <p class="intro__paragraph">Добро пожаловать в будущее!</p>
-        <img class="intro__img" src="" alt="">
-        <div class="intro_parametr parametr parametr_white">
-            <span class="parametr__value">2,7 сек</span>
-            <span class="parametr__var">0-100 км/час</span>    
+        <div class="intro__footer">
+            <div class="intro_parametr intro_parametr_speed parametr parametr_white">
+                <span class="parametr__value">2,7 сек</span>
+                <span class="parametr__var">0-100 км/час</span>    
+            </div>
+            <div class="intro_parametr intro_parametr_road parametr parametr_white">
+                <span class="parametr__value">632 км</span>
+                <span class="parametr__var">запас хода</span>     
+            </div>
+            <span class="intro__drive">тест драйв</span>
+            <button class="intro__button order-button order-button_red">Заказать</button>
         </div>
-        <div class="intro_parametr parametr parametr_white">
-            <span class="parametr__value">632 км</span>
-            <span class="parametr__var">запас хода</span>     
-        </div>
-        <span class="intro__drive">тест драйв</span>
-        <button class="intro__button order-button order-button_white">Заказать</button>
     </section>
     <section class="function">
         <div class="function__column1">
@@ -64,7 +66,7 @@
                 <span class="parametr__var">Объем грузового пространства</span>
             </div>
             <span class="function__about">Узнать больше</span>
-            <button class="function__button order-button order-button_red">Заказать</button>
+            <button class="function__button order-button order-button_white">Заказать</button>
         </div>
     </section>
     <section class="feature">
@@ -83,7 +85,7 @@
             </div>
             <span class="feature__secure">5 звезд безопасности</span>
             <span class="feature__about">Узнать больше</span>
-            <button class="feature__button order-button order-button_red">Заказать</button>
+            <button class="feature__button order-button order-button_white">Заказать</button>
         </div>
         <div class="feature__column2">
             <h3 class="feature__header">Model S</h3>
