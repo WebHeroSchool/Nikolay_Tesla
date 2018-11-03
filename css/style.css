@@ -14,7 +14,11 @@
 }
 
 .navigation__left {
-	margin-right: 168px;
+	margin-right: 178px;
+}
+
+.navigation__right .navigation__item {
+	margin-right: 15px;
 }
 
 .navigation__item {
@@ -28,10 +32,10 @@
 
 	text-decoration: none;
 
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 
-	margin-right: 22px;
-	margin-left: 22px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .navigation__item_active {
@@ -52,7 +56,7 @@
 
 .intro {
 	background-image: url(../img/tesla-and-title.jpg);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 
 	background-position: center;
@@ -69,7 +73,8 @@
 	text-align: center;
 
 	margin: 0;
-	margin-bottom: 20px;
+	margin-top: 55px;
+	margin-bottom: 0;
 }
 
 .intro__paragraph {
@@ -88,6 +93,103 @@
 
 .intro__footer {
 	display: flex;
+
+	margin-left: 23%;
+
+	flex-wrap: wrap;
+}
+
+.intro__speed {
+	margin-right: 82px;
+
+	width: 154px;
+}
+
+.intro__speed:before {
+	content: url(../img/speed.png);
+}
+
+.intro__road:before {
+	content: url(../img/road.png);
+}
+
+.intro__road {
+	margin-right: 105px;
+
+	width: 142px;
+}
+
+.intro__drive {
+	display: flex;
+	align-items: center;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+
+	font-size: 13px;
+	line-height: 16px;
+
+	text-transform: uppercase;
+
+	margin-right: 35px;
+}
+
+.intro__drive:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C4.95819 0 0 4.95819 0 11C0 17.0418 4.95819 22 11 22C17.0418 22 22 17.0418 22 11C22 4.95819 17.0418 0 11 0ZM11 19.3789C6.38002 19.3789 2.62109 15.62 2.62109 11C2.62109 6.38002 6.38002 2.62109 11 2.62109C15.62 2.62109 19.3789 6.38002 19.3789 11C19.3789 15.62 15.62 19.3789 11 19.3789Z' fill='black'/%3E%3Cpath d='M12.2891 9.06641C12.2891 9.77841 11.712 10.3555 11 10.3555C10.288 10.3555 9.71094 9.77841 9.71094 9.06641C9.71094 8.3544 10.288 7.77734 11 7.77734C11.712 7.77734 12.2891 8.3544 12.2891 9.06641Z' fill='black'/%3E%3Cpath d='M11 11.6446C9.85814 11.6446 8.89873 10.8936 8.56085 9.86356C6.85503 10.0495 5.26434 10.4067 3.91402 10.926C3.91368 10.9509 3.91016 10.975 3.91016 11C3.91016 11.7449 4.02715 12.4627 4.24098 13.1377C5.29573 12.5872 6.32849 12.2891 7.13281 12.2891C7.80571 12.2891 8.32251 12.4793 8.71208 12.8714C9.61275 13.7759 9.71597 15.6118 9.71799 17.9677C10.1344 18.0442 10.5618 18.0899 11 18.0899C11.4384 18.0899 11.8658 18.0442 12.2825 17.9677C12.284 15.6136 12.3867 13.7769 13.2879 12.8714C13.6775 12.4798 14.1936 12.2891 14.8672 12.2891C15.6609 12.2891 16.6959 12.5758 17.7605 13.1335C17.9737 12.4598 18.0898 11.7434 18.0898 11C18.0898 10.9755 18.0863 10.9519 18.0862 10.9275C16.6232 10.3634 15.0045 10.0348 13.4393 9.86322C13.1014 10.8936 12.142 11.6446 11 11.6446Z' fill='black'/%3E%3C/svg%3E%0A");
+
+	margin-right: 8px;
+}
+
+.intro__drive:hover:before {
+	background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='#E51937' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C4.95819 0 0 4.95819 0 11C0 17.0418 4.95819 22 11 22C17.0418 22 22 17.0418 22 11C22 4.95819 17.0418 0 11 0ZM11 19.3789C6.38002 19.3789 2.62109 15.62 2.62109 11C2.62109 6.38002 6.38002 2.62109 11 2.62109C15.62 2.62109 19.3789 6.38002 19.3789 11C19.3789 15.62 15.62 19.3789 11 19.3789Z' fill='#E51937'/%3E%3Cpath d='M12.2891 9.06641C12.2891 9.77841 11.712 10.3555 11 10.3555C10.288 10.3555 9.71094 9.77841 9.71094 9.06641C9.71094 8.3544 10.288 7.77734 11 7.77734C11.712 7.77734 12.2891 8.3544 12.2891 9.06641Z' fill='#E51937'/%3E%3Cpath d='M11 11.6446C9.85814 11.6446 8.89873 10.8936 8.56085 9.86356C6.85503 10.0495 5.26434 10.4067 3.91402 10.926C3.91368 10.9509 3.91016 10.975 3.91016 11C3.91016 11.7449 4.02715 12.4627 4.24098 13.1377C5.29573 12.5872 6.32849 12.2891 7.13281 12.2891C7.80571 12.2891 8.32251 12.4793 8.71208 12.8714C9.61275 13.7759 9.71597 15.6118 9.71799 17.9677C10.1344 18.0442 10.5618 18.0899 11 18.0899C11.4384 18.0899 11.8658 18.0442 12.2825 17.9677C12.284 15.6136 12.3867 13.7769 13.2879 12.8714C13.6775 12.4798 14.1936 12.2891 14.8672 12.2891C15.6609 12.2891 16.6959 12.5758 17.7605 13.1335C17.9737 12.4598 18.0898 11.7434 18.0898 11C18.0898 10.9755 18.0863 10.9519 18.0862 10.9275C16.6232 10.3634 15.0045 10.0348 13.4393 9.86322C13.1014 10.8936 12.142 11.6446 11 11.6446Z' fill='#E51937'/%3E%3C/svg%3E%0A");
+}
+
+.intro__drive:hover {
+	color: #E51937;
+}
+
+.parametr {
+	display: flex;
+	align-items: center;
+}
+
+.parametr__column {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 10px;
+}
+
+.parametr__value {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+
+	font-size: 35px;
+	line-height: 43px;
+}
+
+.parametr__var {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.parametr_size {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.intro__button {
+	margin-top: 10px;
 }
 
 .order-button {
@@ -101,10 +203,10 @@
 	color: black;
 
 	border: 2px solid black;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	padding-right: 40px;
-	padding-left: 40px;
+	width: 160px;
+	height: 40px;
+
+	text-transform: uppercase;
 }
 
 .order-button_white {
@@ -115,5 +217,15 @@
 .order-button_red {
 	color: #E51937;
 	border-color: #E51937;
+}
 
+.order-button_red:hover {
+	color: white;
+	background-color: #E51937;
+}
+
+@media (max-width: 900px) {
+	.navigation__menu {
+		display: none;
+	}
 }
