@@ -1,17 +1,16 @@
 body {
 	margin: auto;
 	max-width: 1440px;
+	font-family: Montserrat;
 }
 
 .navigation {
 	display: flex;
-
 	align-items: center;
 }
 
 .navigation__menu {
 	display: flex;
-
 	justify-content: space-between;
     width: 62%;
 }
@@ -21,43 +20,35 @@ body {
     margin-right: 18%;
 }
 
-.navigation__left {
-}
-
 .navigation__right .navigation__item {
 	margin-right: 15px;
 }
 
 .navigation__item {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 18px;
 	color: black;
-
-
 	text-decoration: none;
-
 	padding-bottom: 7px;
-
 	margin-right: 20px;
 	margin-left: 20px;
 }
 
+.navigation__item:hover {
+	color: #ff7878;
+}
+
 .navigation__item_active {
 	color: #E51937;
-
 	border-bottom: 2px solid #E51937;
 	border-radius: 2px;
 }
 
 .navigation__burger {
 	background-image: url(../img/burger.png);
-
 	width: 24px;
 	height: 15px;
-
 	border: none;
 }
 
@@ -65,35 +56,24 @@ body {
 	background-image: url(../img/tesla-and-title.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-
 	background-position: center;
 }
 
 .intro__header {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: 600;
-
 	font-size: 90px;
 	line-height: 110px;
-
 	text-align: center;
-
 	margin: 0;
 	margin-top: 55px;
 	margin-bottom: 0;
 }
 
 .intro__paragraph {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: 500;
-
 	font-size: 15px;
 	line-height: 18px;
-
 	text-align: center;
-
 	margin: 0;
 	margin-bottom: 504px;
 }
@@ -101,13 +81,12 @@ body {
 .intro__footer {
 	display: flex;
 	justify-content: center;
-
+	align-items: center;
 	flex-wrap: wrap;
 }
 
 .intro__speed {
 	margin-right: 82px;
-
 	width: 154px;
 }
 
@@ -121,23 +100,16 @@ body {
 
 .intro__road {
 	margin-right: 105px;
-
 	width: 142px;
 }
 
 .intro__drive {
 	display: flex;
 	align-items: center;
-
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: bold;
-
 	font-size: 13px;
 	line-height: 16px;
-
 	text-transform: uppercase;
-
 	margin-right: 35px;
 }
 
@@ -147,13 +119,12 @@ body {
 	width: 22px;
 	height: 22px;
 	background-image: url(../img/wheel.png);
-
 	margin-right: 8px;
 }
 
 .intro__drive:hover:before {
 	background-image: url(../img/wheel-hover.png);
-		cursor: pointer;
+	cursor: pointer;
 }
 
 .intro__drive:hover {
@@ -168,24 +139,17 @@ body {
 .parametr__column {
 	display: flex;
 	flex-direction: column;
-
 	margin-left: 10px;
 }
 
 .parametr__value {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: 600;
-
 	font-size: 35px;
 	line-height: 43px;
 }
 
 .parametr__var {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: normal;
-
 	font-size: 12px;
 	line-height: 15px;
 }
@@ -200,19 +164,13 @@ body {
 }
 
 .order-button {
-	font-family: Montserrat;
-	font-style: normal;
 	font-weight: bold;
-
 	font-size: 13px;
 	line-height: 16px;
-
 	color: black;
-
 	border: 2px solid black;
 	width: 160px;
 	height: 40px;
-
 	text-transform: uppercase;
 }
 
@@ -233,7 +191,7 @@ body {
 
 @media (max-width: 1157px) {
 	.navigation {
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.navigation__menu {
@@ -255,8 +213,12 @@ body {
 	.intro__paragraph {
 		font-size: 10px;
 		line-height: 12px;
-
 		margin-bottom: 400px;
+	}
+
+	.intro__footer {
+		padding-right: 10px;
+    	padding-left: 10px;
 	}
 }
 
@@ -280,7 +242,6 @@ body {
 
 	.intro__button {
 		margin: auto;
-		margin-top: 11px;
 	}
 
 	.parametr__value {
@@ -295,5 +256,11 @@ body {
 	.parametr__var {
 		font-size: 10px;
 		line-height: 12px;
+	}
+}
+
+@media (max-width: 550px) {
+	.intro__paragraph {
+    	margin-bottom: 226px;
 	}
 }
