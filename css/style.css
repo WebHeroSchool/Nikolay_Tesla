@@ -202,6 +202,10 @@ body {
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	.navigation__burger {
+		margin-right: 20px;
+	}
 }
 
 @media (max-width: 1024px) {
