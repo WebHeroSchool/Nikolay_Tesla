@@ -1,0 +1,270 @@
+body {
+	margin: auto;
+	max-width: 1440px;
+	font-family: Montserrat;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.navigation__menu {
+	display: flex;
+	justify-content: space-between;
+    width: 62%;
+}
+
+.navigation__logo {
+	margin-left: 3%;
+    margin-right: 18%;
+}
+
+.navigation__right .navigation__item {
+	margin-right: 15px;
+}
+
+.navigation__item {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+	color: black;
+	text-decoration: none;
+	padding-bottom: 7px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.navigation__item:hover {
+	color: #ff7878;
+}
+
+.navigation__item_active {
+	color: #E51937;
+	border-bottom: 2px solid #E51937;
+	border-radius: 2px;
+}
+
+.navigation__burger {
+	background-image: url(../img/burger.png);
+	width: 24px;
+	height: 15px;
+	border: none;
+}
+
+.intro {
+	background-image: url(../img/tesla-and-title.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.intro__header {
+	font-weight: 600;
+	font-size: 90px;
+	line-height: 110px;
+	text-align: center;
+	margin: 0;
+	margin-top: 55px;
+	margin-bottom: 0;
+}
+
+.intro__paragraph {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 504px;
+}
+
+.intro__footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.intro__speed {
+	margin-right: 82px;
+	width: 154px;
+}
+
+.intro__speed:before {
+	content: url(../img/speed.png);
+}
+
+.intro__road:before {
+	content: url(../img/road.png);
+}
+
+.intro__road {
+	margin-right: 105px;
+	width: 142px;
+}
+
+.intro__drive {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	text-transform: uppercase;
+	margin-right: 35px;
+}
+
+.intro__drive:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/wheel.png);
+	margin-right: 8px;
+}
+
+.intro__drive:hover:before {
+	background-image: url(../img/wheel-hover.png);
+	cursor: pointer;
+}
+
+.intro__drive:hover {
+	color: #E51937;
+}
+
+.parametr {
+	display: flex;
+	align-items: center;
+}
+
+.parametr__column {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.parametr__value {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 43px;
+}
+
+.parametr__var {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.parametr_size {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.intro__button {
+	margin-top: 10px;
+}
+
+.order-button {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 16px;
+	color: black;
+	border: 2px solid black;
+	width: 160px;
+	height: 40px;
+	text-transform: uppercase;
+}
+
+.order-button_white {
+	color: white;
+	border-color: white;
+}
+
+.order-button_red {
+	color: #E51937;
+	border-color: #E51937;
+}
+
+.order-button_red:hover {
+	color: white;
+	background-color: #E51937;
+}
+
+@media (max-width: 1157px) {
+	.navigation {
+		justify-content: space-between;
+	}
+
+	.navigation__menu {
+		display: none;
+	}
+
+	.navigation__logo {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.navigation__burger {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.intro__header {
+		font-size: 50px;
+		line-height: 61px;
+	}
+
+	.intro__paragraph {
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 400px;
+	}
+
+	.intro__footer {
+		padding-right: 10px;
+    	padding-left: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro__paragraph {
+		margin-bottom: 300px;
+	}
+
+	.intro__speed {
+		margin: auto;
+	}
+
+	.intro__road {
+		margin: auto;
+	}
+
+	.intro__drive {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.intro__button {
+		margin: auto;
+	}
+
+	.parametr__value {
+		font-size: 30px;
+	}
+
+	.parametr_size {
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.parametr__var {
+		font-size: 10px;
+		line-height: 12px;
+	}
+}
+
+@media (max-width: 550px) {
+	.intro__paragraph {
+    	margin-bottom: 226px;
+	}
+}
