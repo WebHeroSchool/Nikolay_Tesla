@@ -695,4 +695,8 @@ body {
 	.function__column1 {
 		height: 326px;
 	}
+
+	.feature__header {
+    font-size: 97px;
+}
 }
